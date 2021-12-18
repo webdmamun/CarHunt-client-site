@@ -1,6 +1,8 @@
 import initializeFirebase from "../Firebase/Firebase.init";
 import {
   getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   updateProfile,
@@ -13,10 +15,17 @@ initializeFirebase();
 
 const UseFirebase = () => {
   const auth = getAuth();
+  const googleProvider = new GoogleAuthProvider();
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
   const [isloading, setIsloading] = useState(true);
   const [admin, setAdmin] = useState(false);
+
+  // Google sign in
+  // Handle Google Sgin in
+  const signInGoogle = () => {
+    return signInWithPopup(auth, googleProvider);
+  };
 
   // registerFunction
   const registerFunction = (email, password, name, history) => {
@@ -105,6 +114,7 @@ const UseFirebase = () => {
     user,
     error,
     isloading,
+    signInGoogle,
     loginFunction,
     logout,
     admin,

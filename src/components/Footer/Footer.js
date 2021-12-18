@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="main-footer-topic">
                 <div className="main-footer-topic-img">
                   <img
-                    src="https://templatekit.jegtheme.com/trail/wp-content/uploads/sites/91/2021/05/trail-logo-fix-M2EEC2.png"
+                    src="https://i.ibb.co/pWmpQKV/logo-2-removebg-preview.png"
                     alt=""
                   />
                   <p>
@@ -51,7 +51,7 @@ const Footer = () => {
 
                     <div className="info-text">
                       <h5>Phone</h5>
-                      <p>(+880)1725502623</p>
+                      <p>(+000)000 00 000</p>
                     </div>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const Footer = () => {
 
                     <div className="info-text">
                       <h5>Email</h5>
-                      <p>khannirub55@gmail.com</p>
+                      <p>carhunt@gmail.com</p>
                     </div>
                   </div>
                 </div>
@@ -155,7 +155,7 @@ const Footer = () => {
 
                     <div className="info-text">
                       <h5>Location</h5>
-                      <p>Narsingdi sador, Dhaka bangldesh</p>
+                      <p>2059 Valley View Drive Somerville, MA 02143</p>
                     </div>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ const Footer = () => {
                       <i class="fas fa-chevron-right"></i>
                     </div>
                     <div>
-                      <h6>Bikes & Parts</h6>
+                      <h6>Cars & Parts</h6>
                     </div>
                   </div>
                   <div className="QUICK-LINKS-info">
@@ -174,7 +174,7 @@ const Footer = () => {
                       <i class="fas fa-chevron-right"></i>
                     </div>
                     <div>
-                      <h6>all byCycle</h6>
+                      <h6>All Cars</h6>
                     </div>
                   </div>
                   <div className="QUICK-LINKS-info">
@@ -182,7 +182,7 @@ const Footer = () => {
                       <i class="fas fa-chevron-right"></i>
                     </div>
                     <div>
-                      <h6>Bikes For Rent</h6>
+                      <h6>Car For Rent</h6>
                     </div>
                   </div>
                   <div className="QUICK-LINKS-info">
@@ -207,7 +207,7 @@ const Footer = () => {
             </div>
             <div>
               <p>
-                Designed by <span>Amanullah nirub</span>
+                Designed by <span>Mamun Ahmed</span>
               </p>
             </div>
           </div>

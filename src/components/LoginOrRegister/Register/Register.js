@@ -67,7 +67,8 @@ const Register = () => {
           <Grid item xs={12} md={6}>
             <div className="loginform-image">
               <img
-                src="https://i.ibb.co/XtjSvjr/istockphoto-1146448534-1024x1024-removebg-preview.png"
+                style={{ borderRadius: "5px" }}
+                src="https://wallpaperaccess.com/full/35813.jpg"
                 alt=""
               />
             </div>

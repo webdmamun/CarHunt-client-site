@@ -79,7 +79,7 @@ const UseFirebase = () => {
 
   const saveUser = (email, displayName) => {
     const newuser = { email, displayName };
-    fetch(`https://cryptic-falls-79729.herokuapp.com/user`, {
+    fetch(`https://stormy-bayou-66113.herokuapp.com/user`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -95,7 +95,7 @@ const UseFirebase = () => {
   };
 
   useEffect(() => {
-    fetch(`https://cryptic-falls-79729.herokuapp.com/user/${user.email}`, {})
+    fetch(`https://stormy-bayou-66113.herokuapp.com/user/${user.email}`, {})
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);

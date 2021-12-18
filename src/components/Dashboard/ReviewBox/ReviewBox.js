@@ -21,7 +21,7 @@ const ReviewBox = () => {
 
     const data = { name, email, dic, img, rating };
 
-    fetch(`https://cryptic-falls-79729.herokuapp.com/reviews`, {
+    fetch(`https://stormy-bayou-66113.herokuapp.com/reviews`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",

@@ -9,7 +9,7 @@ const OrderPlace = () => {
   const [singleService, setSingleService] = useState({});
   const { user } = UseAuth();
   useEffect(() => {
-    fetch(`https://cryptic-falls-79729.herokuapp.com/homeService/${id}`)
+    fetch(`https://stormy-bayou-66113.herokuapp.com/homeService/${id}`)
       .then((res) => res.json())
       .then((data) => setSingleService(data));
   }, [id]);
@@ -41,7 +41,7 @@ const OrderPlace = () => {
       price: singleService.price,
     };
 
-    fetch(`https://cryptic-falls-79729.herokuapp.com/orders`, {
+    fetch(`https://stormy-bayou-66113.herokuapp.com/orders`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",

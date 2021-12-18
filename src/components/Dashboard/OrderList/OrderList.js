@@ -7,7 +7,7 @@ const OrderList = () => {
 
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch(`https://cryptic-falls-79729.herokuapp.com/orders/${user?.email}`)
+    fetch(`https://stormy-bayou-66113.herokuapp.com/orders/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [user?.email]);
@@ -15,7 +15,7 @@ const OrderList = () => {
   const deleteFunction = (id) => {
     const confirm = window.confirm(`are you sure you want to delete?`);
     if (confirm) {
-      fetch(`https://cryptic-falls-79729.herokuapp.com/orders/${id}`, {
+      fetch(`https://stormy-bayou-66113.herokuapp.com/orders/${id}`, {
         method: "delete",
       })
         .then((res) => res.json())

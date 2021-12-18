@@ -5,7 +5,7 @@ const ManageOrders = () => {
   const [allOrders, setAllOrders] = useState([]);
   const [shipted, setShipted] = useState(false);
   useEffect(() => {
-    fetch(`https://cryptic-falls-79729.herokuapp.com/orders`)
+    fetch(`https://stormy-bayou-66113.herokuapp.com/orders`)
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [shipted]);
@@ -13,7 +13,7 @@ const ManageOrders = () => {
   const deleteOrder = (id) => {
     const confirm = window.confirm(`are you sure you want to delete?`);
     if (confirm) {
-      fetch(`https://cryptic-falls-79729.herokuapp.com/orders/${id}`, {
+      fetch(`https://stormy-bayou-66113.herokuapp.com/orders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -28,7 +28,7 @@ const ManageOrders = () => {
   };
 
   const statusUpdateFunction = (id) => {
-    fetch(`https://cryptic-falls-79729.herokuapp.com/orders/${id}`, {
+    fetch(`https://stormy-bayou-66113.herokuapp.com/orders/${id}`, {
       method: "PUT",
     })
       .then((res) => res.json())

@@ -6,7 +6,7 @@ const HomeServices = () => {
   const [homeServices, setHomeServices] = useState([]);
 
   useEffect(() => {
-    fetch(`https://cryptic-falls-79729.herokuapp.com/homeService`)
+    fetch(`https://stormy-bayou-66113.herokuapp.com/homeService`)
       .then((res) => res.json())
       .then((data) => setHomeServices(data.slice(0, 6)));
   }, []);

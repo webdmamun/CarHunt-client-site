@@ -16,7 +16,7 @@ const AddProducts = () => {
 
     const newProduct = { img, title, dic, price };
 
-    fetch(`https://cryptic-falls-79729.herokuapp.com/homeService`, {
+    fetch(`https://stormy-bayou-66113.herokuapp.com/homeService`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",

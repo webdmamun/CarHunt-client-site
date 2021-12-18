@@ -4,7 +4,7 @@ import "./ManageProduct.css";
 const ManageProducts = () => {
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
-    fetch(`https://cryptic-falls-79729.herokuapp.com/homeService`)
+    fetch(`https://stormy-bayou-66113.herokuapp.com/homeService`)
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, []);
@@ -12,7 +12,7 @@ const ManageProducts = () => {
   const deleteProduct = (id) => {
     const confirm = window.confirm(`are you sure you want to delete?`);
     if (confirm) {
-      fetch(`https://cryptic-falls-79729.herokuapp.com/homeService/${id}`, {
+      fetch(`https://stormy-bayou-66113.herokuapp.com/homeService/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

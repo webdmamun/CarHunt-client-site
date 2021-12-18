@@ -205,10 +205,21 @@ const Header = () => {
             </div>
             <div className="loginorregister">
               {user?.email && (
-                <small style={{ color: "#f23801" }}>{user?.displayName}</small>
+                <small style={{ color: "#f23801", marginRight: "10px" }}>
+                  {user?.displayName}
+                </small>
               )}
               {user?.email ? (
-                <Button onClick={logout}>logout</Button>
+                <Button
+                  variant="outlined"
+                  style={{
+                    borderColor: "red",
+                    color: "white",
+                  }}
+                  onClick={logout}
+                >
+                  logout
+                </Button>
               ) : (
                 <Button
                   variant="outlined"

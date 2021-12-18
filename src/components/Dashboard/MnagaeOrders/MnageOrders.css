@@ -42,7 +42,7 @@
   transition: all 0.3s linear;
   border-radius: 5px;
 }
-
+/* Media quary for mobile versoin  */
 @media (max-width: 768px) {
   .all-product-manage {
     background: none;
